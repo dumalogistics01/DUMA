@@ -22,11 +22,38 @@
     <p>We specialize in container movement, shipping logistics, and road transport across Nhava Sheva.</p>
     <section id="services" class="services">
       <h2><i class="fas fa-truck"></i> Our Core Services</h2>
-      <ul>
-        <li><i class="fas fa-box"></i> Empty Container Pickup & Delivery</li>
+  <ul>
+  <li><i class="fas fa-box"></i> Empty Container Pickup & Delivery</li>
         <li><i class="fas fa-road"></i> Port to Yard & Yard to Port Transfer</li>
         <li><i class="fas fa-clock"></i> Safe & Timely Delivery of Containers</li>
         <li><i class="fas fa-file-invoice-dollar"></i> Flexible Contracts & TEU-based Pricing</li>
+     <li><i class="fas fa-file-invoice-dollar"></i> Garage / Workshop Services</li>
+    <!-- Our Services Section -->
+<section id="services" class="services">
+  <h2>🚛 Our Core Services</h2>
+  <div class="service-box">
+    
+    <h3>Transport & Fleet Operations</h3>
+    <ul>
+      <li>Truck & Trailer Fleet Management</li>
+      <li>On-Time Delivery of Containers & Goods</li>
+      <li>Route Planning & Logistics Optimization</li>
+      <li>Fleet Tracking & Monitoring</li>
+      <li>Custom Contracts & Flexible Services</li>
+    </ul>
+  </div>
+
+  <div class="service-box">
+    <h3>Own Garage & Vehicle Maintenance</h3>
+    <ul>
+      <li>Truck & Trailer Maintenance & Servicing</li>
+      <li>Container & Equipment Repairs</li>
+      <li>Tyre, Engine, Oil Change & Alignment Services</li>
+      <li>On-site Breakdown Assistance</li>
+      <li>Safety Checks & Regulatory Compliance</li>
+    </ul>
+  </div>
+</section>
       </ul>
     </section>
 
@@ -159,3 +186,65 @@
 </body>
 
 </html>
+<!-- Floating Tabs -->
+<div class="floating-tabs">
+  <button onclick="scrollToSection('services')">Our Services</button>
+  <button onclick="scrollToSection('contact')">Contact</button>
+</div>
+
+<!-- WhatsApp Bubble -->
+<a href="https://wa.me/917039423001" class="whatsapp-bubble" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+<style>
+/* Floating Tabs */
+.floating-tabs {
+  position: fixed;
+  bottom: 110px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.floating-tabs button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.floating-tabs button:hover {
+  background: #0056b3;
+}
+
+/* WhatsApp bubble */
+.whatsapp-bubble {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-bubble img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+</style>
+
+<script>
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
